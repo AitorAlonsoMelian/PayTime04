@@ -1,0 +1,360 @@
+﻿<!-- Hecho por el grupo 04 - Aitor Alonso, Jesus Chamizo, Eduardo Da Silva -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayTime04</title>
+    <link rel="icon" type="image" href="./img/cerdotiempo.jpg">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>      
+    <link type="text/css" rel="stylesheet" href="stilo.css" />
+    <link type="text/javascript" href="firebase.js"/>
+
+</head>
+<body>
+
+<div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo center">PAYTIME04</a>
+      <img class="hide-on-med-and-down" src = "./img/cerditiempo.png" height="60" width="90" />
+      <ul class="right hide-on-med-and-down">
+          <li><a href="">Inicio</a></li>
+          <li><a href="#quienes_somos">Quienes somos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+              <a href="register.html" class="btn boton">
+                  Registrarse
+              </a>
+          </li>
+          <li>
+              <a href="profile.html">
+                  <img src="img/profile.png" width="64" />
+              </a>
+          </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+          <li><a href="">Inicio</a></li>
+          <li><a href="#quienes_somos">Quienes somos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="register.html" class="btn boton">
+              Registrarse
+            </a>
+          </li>
+
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+ </div>
+  
+    <!-- <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+        <li><a href="">Inicio</a></li>
+        <li><a href="#quienes_somos">Quienes somos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+        <li><a href="">Inicio</a></li>
+        <li><a href="#quienes_somos">Quienes somos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> -->
+  
+    
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+          <h1 class="header center blue-text text-lighten-5">Cuando por fin el tiempo es oro</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Una aplicación de Banco de tiempo donde podrás dar un valor a tu tiempo e intercambiarlo con otras personas. Tu tiempo, ahora en tus manos. </h5>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="bckg1edit2.png" alt="Unsplashed background img 1"></div>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h4 class="center-align">¿Que es un <dfn>banco de tiempo</dfn>?</h4>
+
+    <div class="row container">
+        <div class="col s4 offset-s2">
+            <img src="img/banco.png" class="imagen responsive-img" />
+        </div>
+        <div class="col s6">
+            <p class="container center-align texto">
+                Un banco de tiempo es un sistema de intercambio de servicios por tiempo. En este entorno, la
+                única moneda de cambio es el propio tiempo. Los miembros del banco de tiempo compartiran sus habilidades entre sí sin utilizar dinero,
+                sólo se contabilizará el tiempo empleado en horas.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="row container">
+        <h4 class="center-align">¿Como funciona?</h4>
+        <p class="center-align">
+            <img class="responsive-img imagen" src="img/bdt.jpg" width="75%" />
+        </p>
+    </div>
+    
+      <div id="index-banner" class="parallax-container">
+    <div class="parallax"><img src="cutre1.png" alt="Unsplashed background img 1"></div>
+  </div>
+    
+
+    <div>
+        <h4 class="center-align">¿Quieres participar?</h4>
+        <h5 class="center-align">1º Paso</h5>
+        <p class="center-align texto">
+            <a href="register.html">Regístrate</a> en nuestra página para pertenecer a la comunidad de miembros de <b>PAYTIME 04</b> y poder intercambiar tus horas con el resto de miembros.
+        </p>
+        <h5 class="center-align">2º Paso</h5>
+        <p class="center-align texto">
+            Ponte en contacto con el resto de miembros para ofrecerles tus servicios, o pedir los suyos, aumentando o disminuyendo así el saldo de tu cartera horaria.
+        </p>
+    </div>
+
+    <br />
+
+
+
+    <div class="row">
+
+        <div class="col s12 m4 offset-m2">
+            <h4 class="center-align"> Características de PayTime04 </h4>
+            <ul class="center-align collection">
+                <li class="collection-item">Multiplataforma</li>
+                <li class="collection-item">Facilita nuestro día a día</li>
+                <li class="collection-item">Facil e intuitiva de usar</li>
+                <li class="collection-item">Versiones gratuitas y de pago</li>
+                <li class="collection-item">Mejora en base al feedback de los usuarios</li>
+            </ul>
+        </div>
+
+
+        <div class="col s12 m4">
+            <h4 class="center-align">Consigue nuestra fantastica app ahora mismo</h4>
+            <p class="center-align">
+                <a title="Google Play Store" href="https://play.google.com/store">
+                    <img align="middle" src="./img/googleplay.png" height="80" width="80">
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row" id="quienes_somos">
+        <div class="col s8 offset-s2">
+            <h3 class="center">Quienes somos</h3>
+            <p class="center texto">
+                Somos un equipo de humildes estudiantes que quieren facilitar tu día a día en tu triste y
+                aburrida empresa.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s8 offset-s2">
+            <table class="centered striped responsive-table">
+                <tr>
+                    <td><em><strong>Nombre</strong></em></td>
+                    <td><em><strong>Ocupacion</strong></em></td>
+                    <td><em><strong>En la empresa desde</strong></em></td>
+                </tr>
+                <tr>
+                    <td>Jesus Chamizo</td>
+                    <td>Director ejecutivo</td>
+                    <td>2020</td>
+                </tr>
+
+                <tr>
+                    <td>Aitor Alonso</td>
+                    <td>Analista/programador</td>
+                    <td>2020</td>
+                </tr>
+
+                <tr>
+                    <td>Eduardo Da Silva</td>
+                    <td>Programador</td>
+                    <td>Ayer</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <br>
+    <h5 class="center"> Nuestros valores</h5>
+
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text"><i class="material-icons">people</i></h2>
+                        <h5 class="center">Por el cliente, para el cliente</h5>
+
+                        <p class="light center texto">Tanto nosotros como vosotros necesitamos organizar nuestro tiempo y, por tanto, no hay mejor manera de mejorar que conocer qué necesitamos en nuestro día a día</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text"><i class="material-icons">thumb_up</i></h2>
+                        <h5 class="center">Sinceridad</h5>
+
+                        <p class="light center texto">No vale de nada prometer en vano y hacer perder vuestro tiempo. Justamente esta aplicación es para lo contrario. Por ello, preferimos ser honestos y anunciar sólo aquello que podamos ofrecer.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text"><i class="material-icons">sentiment_very_satisfied</i></h2>
+                        <h5 class="center">Cada uno de nosotros es diferente</h5>
+
+                        <p class="light center texto">Cada uno de nosotros tiene una situación distinta. Que todos podamos acceder a este servicio es nuestra prioridad.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <h3 id="contacto" class="center">¿Necesitas ayuda?</h3>
+    <div class="row">
+        <form class="col s10 offset-s1">
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input placeholder="Nombre" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s12 m6">
+                    <input placeholder="Apellidos" id="last_name" type="text" class="validate">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input placeholder="Email" id="email" type="email" class="validate">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field s12 col m10 ">
+                    <textarea placeholder="Cuentanos qué pasa por tu mente..." id="textarea1" class="materialize-textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 offset-s1">
+                    <label>
+                        <input id="indeterminate-checkbox" type="checkbox" />
+                        <span>Acepto recibir mensajes relacionados con PAYTIME04</span>
+                    </label>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col s12 offset-s1">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">
+                        Enviar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p class="grey-text text-lighten-4">PAYTIME04 es una app ficticia desarrollada para la asignatura de Usabilidad y Accesibilidad. Ninguna información aquí presente es real.</p>
+                </div>
+                <div class="col l3 offset-l3 s12">
+                    <h5 class="white-text">Enlaces de interes</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.ull.es">Pagina oficial ULL</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://play.google.com/store">Descarga la APP en Android</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Grupo 04 de Usabilidad y Accesibilidad 19/20
+            </div>
+        </div>
+    </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+<!-- <script>
+    $( document ).ready(function() {
+      $(".button-collapse").sideNav();
+    });
+</script> -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAtfYfIYDw7XQ4qOIdnemqpWiozSZH7DUY",
+            authDomain: "paytime04-uya.firebaseapp.com",
+            databaseURL: "https://paytime04-uya.firebaseio.com",
+            projectId: "paytime04-uya",
+            storageBucket: "paytime04-uya.appspot.com",
+            messagingSenderId: "977120654255",
+            appId: "1:977120654255:web:8aa6d4fa509def8717355a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+
+    </script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+</body>
+  
+</html>

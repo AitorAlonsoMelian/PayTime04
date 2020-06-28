@@ -1,0 +1,55 @@
+body {
+    background-color:azure;
+    /*background-image:url(img/fondo.jpg);*/
+}
+
+header a {
+    font-family:sans-serif;
+    font-style:italic;
+}
+
+.texto {
+    font-size: 26px;
+    font-family:Gabriola;
+
+}
+.negro {
+    color:black;
+}
+
+.imagen {
+    border: 3px solid;
+    border-color:aquamarine;
+}
+
+.boton {
+    margin-right: 15px;
+    font-style:normal;
+    font-size:16px;
+}
+
+.nav-fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-bottom: 0px;
+    z-index: 997;
+  }
+
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(255,255,255, 0.7); /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
