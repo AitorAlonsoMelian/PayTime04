@@ -55,3 +55,23 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+
+
+
+/* SIDENAV ACTIVATOR*/
+@media only screen and (max-width: 1230px) {
+    a.sidenav-trigger {
+        display: block !important;
+    }
+
+    .hide-on-med-and-down {
+        display: none !important;
+    }
+
+    nav .brand-logo {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
