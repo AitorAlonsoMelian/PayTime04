@@ -128,6 +128,8 @@
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>  
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -153,12 +155,43 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         const database = firebase.database();
+        const db = firebase.firestore();
+
+
+function changeValues(e)  
+      {
+        if(e.keyCode==13)
+        {
+          list = document.getElementById("traday-nav").getElementsByTagName("LI");
+          console.log(list);
+          for (let i = 0; i < list.length; i++)
+          {
+            list[i].childNodes[0].tabIndex=0;
+          }
+        }
+      }
+
+      function nullValues(e)  
+      {
+        if(e.keyCode==13)
+        {
+          list = document.getElementById("traday-nav").getElementsByTagName("LI");
+          console.log(list);
+          for (let i = 0; i < list.length; i++)
+          {
+            list[i].childNodes[0].tabIndex=-1;
+          }
+        }
+      }
+
+
 
     </script>
+
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/contacto.js"></script>
+  <script src=".js/contacto.js"></script>
 </body>
   
 </html>
