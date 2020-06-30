@@ -17,7 +17,6 @@
 
 </head>
 <body>
-
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper">
@@ -31,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="profile.html" class="dropdown-trigger" data-target="dropdown1" tabindex="0">
+                        <a href="profile.html" class="dropdown-trigger" data-target="dropdown1" tabindex="0" aria-label="Perfil Desplegable">
                             <img src="img/profile.png" width="64" />
                         </a>
                     </li>
@@ -59,9 +58,9 @@
 
     <!-- Dropdown Structure -->
     <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="profile.html">Mi Perfil</a></li>
-        <li><a href="Contacto.html">Mis Contactos</a></li>
-        <li><a href="Tareas.html">Mis Tareas</a></li>
+        <li aria-label="Mi Perfil"><a href="profile.html">Mi Perfil</a></li>
+        <li aria-label="Mis contactos"><a href="Contacto.html">Mis Contactos</a></li>
+        <li aria-label="Mis tareas"><a href="Tareas.html">Mis Tareas</a></li>
     </ul>
 
     <ul id='dropdown2' class='dropdown-content'>
@@ -69,6 +68,7 @@
         <li><a href="Contacto.html">Mis Contactos</a></li>
         <li><a href="Tareas.html">Mis Tareas</a></li>
     </ul>
+
     <!---->
     <nav>
         <div class="nav-wrapper cyan lighten-3 row">

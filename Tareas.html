@@ -1,4 +1,4 @@
-<!-- Hecho por el grupo 04 - Aitor Alonso, Jesus Chamizo, Eduardo Da Silva -->
+﻿<!-- Hecho por el grupo 04 - Aitor Alonso, Jesus Chamizo, Eduardo Da Silva -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,8 +17,7 @@
 
 </head>
 <body>
-
-<div class="navbar-fixed">
+    <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper">
                 <img class="hide-on-med-and-down" src="./img/cerditiempo.png" height="60" width="90" />
@@ -26,12 +25,12 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">Inicio</a></li>
                     <li>
-                        <a href="register.html" class="btn boton">
+                        <a href="register.html" class="btn boton" aria-label="Registrarse">
                             Registrarse
                         </a>
                     </li>
                     <li>
-                        <a href="profile.html" class="dropdown-trigger" data-target="dropdown1" tabindex="0">
+                        <a href="profile.html" class="dropdown-trigger" data-target="dropdown1" tabindex="0" aria-label="Perfil Desplegable">
                             <img src="img/profile.png" width="64" />
                         </a>
                     </li>
@@ -41,7 +40,7 @@
                 <ul id="nav-mobile" class="sidenav">
                     <li><a href="index.html" tabindex="-1">Inicio</a></li>
                     <li>
-                        <a href="register.html" class="btn boton" tabindex="-1">
+                        <a href="register.html" class="btn boton" tabindex="-1" aria-label="Registrarse">
                             Registrarse
                         </a>
                     </li>
@@ -56,58 +55,73 @@
             </div>
         </nav>
     </div>
-  
-  <!--Zona de las tareas -->
-  <section id="zona_tareas" role="main">
-    <div class="collection" id="tareaslist">
-    
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+        <li aria-label="Mi Perfil"><a href="profile.html">Mi Perfil</a></li>
+        <li aria-label="Mis contactos"><a href="Contacto.html">Mis Contactos</a></li>
+        <li aria-label="Mis tareas"><a href="Tareas.html">Mis Tareas</a></li>
+    </ul>
+
+    <ul id='dropdown2' class='dropdown-content'>
+        <li><a href="profile.html">Mi Perfil</a></li>
+        <li><a href="Contacto.html">Mis Contactos</a></li>
+        <li><a href="Tareas.html">Mis Tareas</a></li>
+    </ul>
+
+
+    <!--Zona de las tareas -->
+    <section id="zona_tareas" role="main">
+        <div class="collection" id="tareaslist">
+
+        </div>
+    </section>
+
+    <div id="add_tarea" class="center-align">
+        <br>
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <button aria-label="Añadir contactos " href="#modalTarea" class="btn-floating btn-large waves-effect waves-light blue modal-trigger"><i class="material-icons">add</i></button>
+            </div>
+        </div>
+        <div id="modalTarea" class="modal">
+            <div class="modal-content">
+                <div class"row white">
+                    <h3>Añadir nueva tarea</h3>
+                    <div class="input-field col 12">
+                        <label>Nombre de la tarea</label>
+                        <input type="text" class="validate" id="nombreTarea">
+                    </div>
+                    <div class="input-field col 12">
+                        <label>Destinatario</label>
+                        <input type="text" class="validate" id="destinoTarea">
+                    </div>
+                    <div class="input-field col 12">
+                        <label>Descripcion de la tarea</label>
+                        <input type="text" class="validate" id="descripcionTarea">
+                    </div>
+                    <div class="input-field col 12">
+                        <label>Numero de horas</label>
+                        <input type="text" class="validate" id="horasTarea">
+                    </div>
+                    <div class="input-field col 12" id="btnNuevaTarea">
+                        <button class="btn waves-effect waves-light" type="submit" id="botonEnviarTarea">
+                            Agregar tarea
+                            <i class="material-icons right">add_circle</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-    
-  <div id="add_tarea" class="center-align">
-  <br>
-  <div class="row">
-    <div class="col s12 m12 l12">
-      <button aria-label="Añadir contactos " href="#modalTarea" class="btn-floating btn-large waves-effect waves-light blue modal-trigger"><i class="material-icons">add</i></button>
-    </div>
-  </div>
-  <div id="modalTarea" class="modal">
-    <div class="modal-content">
-      <div class"row white">
-        <h3>Añadir nueva tarea</h3>
-        <div class="input-field col 12">
-          <label>Nombre de la tarea</label>
-          <input type="text" class="validate" id="nombreTarea">
-        </div>
-        <div class="input-field col 12">
-          <label>Destinatario</label>
-          <input type="text" class="validate" id="destinoTarea">
-        </div>
-        <div class="input-field col 12">
-          <label>Descripcion de la tarea</label>
-          <input type="text" class="validate" id="descripcionTarea">
-        </div>
-        <div class="input-field col 12">
-          <label>Numero de horas</label>
-          <input type="text" class="validate" id="horasTarea">
-        </div>
-        <div class="input-field col 12" id="btnNuevaTarea">
-          <button class="btn waves-effect waves-light" type="submit" id="botonEnviarTarea">Agregar tarea
-          <i class="material-icons right">add_circle</i>
-          </button>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
-      </div>
-    </div>
-  </div>
-</div>
-  
-  
-  
-    
-    
+
+
+
+
+
 
     <footer class="page-footer" role="contentinfo">
         <div class="container">
@@ -134,17 +148,15 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>  
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-
-
-<!-- <script>
-    $( document ).ready(function() {
-      $(".button-collapse").sideNav();
-    });
-</script> -->
+    <!-- <script>
+        $( document ).ready(function() {
+          $(".button-collapse").sideNav();
+        });
+    </script> -->
 
     <script>
         // Your web app's Firebase configuration
@@ -164,10 +176,10 @@
 
     </script>
 
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/tareas.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/tareas.js"></script>
 </body>
   
 </html>
