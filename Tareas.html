@@ -1,0 +1,165 @@
+<!-- Hecho por el grupo 04 - Aitor Alonso, Jesus Chamizo, Eduardo Da Silva -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayTime04</title>
+    <link rel="icon" type="image" href="./img/cerdotiempo.jpg">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>      
+    <link type="text/css" rel="stylesheet" href="stilo.css" />
+    <link type="text/javascript" href="firebase.js"/>
+
+</head>
+<body>
+
+<div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="index.html" class="brand-logo center">PAYTIME04</a>
+      <img class="hide-on-med-and-down" src = "./img/cerditiempo.png" height="60" width="90" />
+      <ul class="right hide-on-med-and-down">
+         <li><a href="index.html">Inicio</a></li>
+          <li><a href="#quienes_somos">Quienes somos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="register.html" class="btn boton">
+              Registrarse
+            </a>
+          </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#quienes_somos">Quienes somos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="register.html" class="btn boton">
+              Registrarse
+            </a>
+          </li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+ </div>
+  
+  <!--Zona de las tareas -->
+  <section id="zona_tareas">
+    <div class="collection" id="tareaslist">
+    
+    </div>
+  </section>
+    
+  <div id="add_tarea" class="center-align">
+  <br>
+  <div class="row">
+    <div class="col s12 m12 l12">
+      <button aria-label="Añadir contactos " href="#modalTarea" class="btn-floating btn-large waves-effect waves-light blue modal-trigger"><i class="material-icons">add</i></button>
+    </div>
+  </div>
+  <div id="modalTarea" class="modal">
+    <div class="modal-content">
+      <div class"row white">
+        <h3>Añadir nueva tarea</h3>
+        <div class="input-field col 12">
+          <label>Nombre de la tarea</label>
+          <input type="text" class="validate" id="nombreTarea">
+        </div>
+        <div class="input-field col 12">
+          <label>Destinatario</label>
+          <input type="text" class="validate" id="destinoTarea">
+        </div>
+        <div class="input-field col 12">
+          <label>Descripcion de la tarea</label>
+          <input type="text" class="validate" id="descripcionTarea">
+        </div>
+        <div class="input-field col 12">
+          <label>Numero de horas</label>
+          <input type="text" class="validate" id="horasTarea">
+        </div>
+        <div class="input-field col 12" id="btnNuevaTarea">
+          <button class="btn waves-effect waves-light" type="submit" id="botonEnviarTarea">Agregar tarea
+          <i class="material-icons right">add_circle</i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  
+    
+    
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p class="grey-text text-lighten-4">PAYTIME04 es una app ficticia desarrollada para la asignatura de Usabilidad y Accesibilidad. Ninguna información aquí presente es real.</p>
+                </div>
+                <div class="col l3 offset-l3 s12">
+                    <h5 class="white-text">Enlaces de interes</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.ull.es">Pagina oficial ULL</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://play.google.com/store">Descarga la APP en Android</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Grupo 04 de Usabilidad y Accesibilidad 19/20
+            </div>
+        </div>
+    </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>  
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+<!-- <script>
+    $( document ).ready(function() {
+      $(".button-collapse").sideNav();
+    });
+</script> -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAtfYfIYDw7XQ4qOIdnemqpWiozSZH7DUY",
+            authDomain: "paytime04-uya.firebaseapp.com",
+            databaseURL: "https://paytime04-uya.firebaseio.com",
+            projectId: "paytime04-uya",
+            storageBucket: "paytime04-uya.appspot.com",
+            messagingSenderId: "977120654255",
+            appId: "1:977120654255:web:8aa6d4fa509def8717355a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+        const db = firebase.firestore();
+
+    </script>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/tareas.js"></script>
+</body>
+  
+</html>
