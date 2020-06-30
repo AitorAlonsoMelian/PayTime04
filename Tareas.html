@@ -19,35 +19,43 @@
 <body>
 
 <div class="navbar-fixed">
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper">
-      <a id="logo-container" href="index.html" class="brand-logo center">PAYTIME04</a>
-      <img class="hide-on-med-and-down" src = "./img/cerditiempo.png" height="60" width="90" />
-      <ul class="right hide-on-med-and-down">
-         <li><a href="index.html">Inicio</a></li>
-          <li><a href="#quienes_somos">Quienes somos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li>
-            <a href="register.html" class="btn boton">
-              Registrarse
-            </a>
-          </li>
-      </ul>
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper">
+                <img class="hide-on-med-and-down" src="./img/cerditiempo.png" height="60" width="90" />
+                <a id="logo-container" href="index.html" class="brand-logo center" role="banner">PAYTIME04</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>
+                        <a href="register.html" class="btn boton">
+                            Registrarse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="dropdown-trigger" data-target="dropdown1" tabindex="0">
+                            <img src="img/profile.png" width="64" />
+                        </a>
+                    </li>
 
-      <ul id="nav-mobile" class="sidenav">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#quienes_somos">Quienes somos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li>
-            <a href="register.html" class="btn boton">
-              Registrarse
-            </a>
-          </li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </ul>
+
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="index.html" tabindex="-1">Inicio</a></li>
+                    <li>
+                        <a href="register.html" class="btn boton" tabindex="-1">
+                            Registrarse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="dropdown-trigger" data-target="dropdown2" tabindex="-1">
+                            <img src="img/profile.png" width="48" />
+                        </a>
+                    </li>
+
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
     </div>
-  </nav>
- </div>
   
   <!--Zona de las tareas -->
   <section id="zona_tareas" role="main">
