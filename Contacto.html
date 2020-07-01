@@ -5,16 +5,14 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PayTime04 - Mis Contactos</title>
     <link rel="icon" type="image" href="./img/cerdotiempo.jpg">
-
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>      
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/stilo.css" />
-    <link type="text/javascript" href="firebase.js"/>
-
+    <link type="text/javascript" href="firebase.js" />
 </head>
 <body>
     <div class="navbar-fixed">
@@ -23,7 +21,9 @@
                 <img class="hide-on-med-and-down" src="./img/cerditiempo.png" height="60" width="90" />
                 <a id="logo-container" href="index.html" class="brand-logo center" role="banner">PAYTIME04</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html">Inicio</a></li>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
                     <li>
                         <a href="register.html" class="btn boton black-text" aria-label="Registrarse">
                             <b>Registrarse</b>
@@ -34,11 +34,11 @@
                             <img src="img/profile.png" width="64" />
                         </a>
                     </li>
-
                 </ul>
-
                 <ul id="nav-mobile" class="sidenav">
-                    <li><a href="index.html" tabindex="-1">Inicio</a></li>
+                    <li>
+                        <a href="index.html" tabindex="-1">Inicio</a>
+                    </li>
                     <li>
                         <a href="register.html" class="btn boton black-text" tabindex="-1" aria-label="Registrarse">
                             <b>Registrarse</b>
@@ -49,63 +49,71 @@
                             <img src="img/profile.png" width="48" />
                         </a>
                     </li>
-
                 </ul>
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
             </div>
         </nav>
     </div>
-
     <!-- Dropdown Structure -->
     <ul id='dropdown1' class='dropdown-content'>
-        <li aria-label="Mi Perfil"><a href="profile.html">Mi Perfil</a></li>
-        <li aria-label="Mis contactos"><a href="Contacto.html">Mis Contactos</a></li>
-        <li aria-label="Mis tareas"><a href="Tareas.html">Mis Tareas</a></li>
+        <li aria-label="Mi Perfil">
+            <a href="profile.html">Mi Perfil</a>
+        </li>
+        <li aria-label="Mis contactos">
+            <a href="Contacto.html">Mis Contactos</a>
+        </li>
+        <li aria-label="Mis tareas">
+            <a href="Tareas.html">Mis Tareas</a>
+        </li>
     </ul>
-
     <ul id='dropdown2' class='dropdown-content'>
-        <li><a href="profile.html">Mi Perfil</a></li>
-        <li><a href="Contacto.html">Mis Contactos</a></li>
-        <li><a href="Tareas.html">Mis Tareas</a></li>
+        <li>
+            <a href="profile.html">Mi Perfil</a>
+        </li>
+        <li>
+            <a href="Contacto.html">Mis Contactos</a>
+        </li>
+        <li>
+            <a href="Tareas.html">Mis Tareas</a>
+        </li>
     </ul>
-
-
-
     <nav>
         <div class="nav-wrapper cyan darken-3 row">
             <div class="col s11 offset-s1">
                 <a href="index.html" class="breadcrumb negro">Inicio</a>
                 <a href="Contacto.html" class="breadcrumb negro">Mis Contactos</a>
-
             </div>
         </div>
     </nav>
-
     <h3 tabindex="0" class="center-align">Mis contactos</h3>
     <section id="zona_contactos" role="main">
         <div class="collection" id="contactlist">
             <a href="#!" class="collection-item text-grey center-align">
                 "Nombre: Marcelo"
+
                 <br>
-                "Email: "agachate y conoselo"
+                "Email: "Conocelo@gmail.com"
+
             </a>
         </div>
     </section>
-
     <div id="add_contacto" class="center-align">
         <br>
         <div class="row">
             <div class="col s12 m12 l12">
-                <button aria-label="Añadir contactos " href="#modalContacto" class="btn-floating btn-large waves-effect waves-light blue modal-trigger"><i class="material-icons">add</i></button>
+                <button aria-label="Añadir contactos " href="#modalContacto" class="btn-floating btn-large waves-effect waves-light blue modal-trigger">
+                    <i class="material-icons">add</i>
+                </button>
             </div>
         </div>
-
         <div id="modalContacto" class="modal">
             <div class="modal-content">
                 <div class"row white">
                     <h3>Añadir nuevo contacto</h3>
                     <div class="input-field col 12">
-                        <label > Nombre del usuario </label>
+                        <label> Nombre del usuario </label>
                         <input aria-label="Nombre de Usuario" type="text" class="validate" id="UserName">
                     </div>
                     <div class="input-field col 12">
@@ -115,27 +123,17 @@
                     <div class="input-field col 12" id="btnNuevoContacto">
                         <button aria-label="Guardar usuario" class="btn waves-effect waves-light" type="submit" id="botonEnviar">
                             Guardar usuario
+
                             <i class="material-icons right">add_circle</i>
                         </button>
-
                     </div>
-
                 </div>
                 <div class="modal-footer">
                     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
                 </div>
             </div>
-
         </div>
     </div>
-
-
-
-
-
-
-
-
     <footer class="page-footer" role="contentinfo">
         <div class="container">
             <div class="row">
@@ -145,8 +143,12 @@
                 <div class="col l3 offset-l3 s12">
                     <h5 class="black-text" tabindex="0">Enlaces de interes</h5>
                     <ul>
-                        <li><a class="black-text text-lighten-3" href="https://forms.gle/V6RdK1zUqHq9RJoZA">Cuestionario de evaluacion de la web</a></li>
-                        <li><a class="black-text text-lighten-3" href="https://play.google.com/store">Descarga la APP en Android</a></li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="https://forms.gle/V6RdK1zUqHq9RJoZA">Cuestionario de evaluacion de la web</a>
+                        </li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="https://play.google.com/store">Descarga la APP en Android</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -157,20 +159,17 @@
             </div>
         </div>
     </footer>
-
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
-
     <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
+    https://firebase.google.com/docs/web/setup#available-libraries -->
     <!-- <script>
         $( document ).ready(function() {
           $(".button-collapse").sideNav();
         });
     </script> -->
-
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -188,7 +187,6 @@
         const db = firebase.firestore();
 
     </script>
-
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
@@ -197,5 +195,4 @@
         $('.dropdown-trigger').dropdown();
     </script>
 </body>
-  
 </html>
