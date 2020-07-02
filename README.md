@@ -11,4 +11,4 @@ Realizado por:
 
 ### Enlaces relacionados con nuestro proyecto.
 #### [Nuestra página web](https://aitoralonsomelian.github.io/PayTime04/)
-#### [Cuestionario de evaluación](https://docs.google.com/forms/d/e/1FAIpQLSdxC2KnUU8GcLhOgOfBL_asueWQCEcmAA5a0LjhAyfZtN6oqg/viewanalytics)
+#### [Cuestionario de evaluación](https://docs.google.com/forms/d/e/1FAIpQLSdxC2KnUU8GcLhOgOfBL_asueWQCEcmAA5a0LjhAyfZtN6oqg/viewform?usp=sf_link)
